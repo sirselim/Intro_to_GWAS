@@ -1,5 +1,5 @@
 # Intro_to_GWAS
-An introductory workshop to GWAS analysis using PLINK and R
+An introductory workshop to GWAS analysis using `PLINK` and `R`.
 
 ## Overview
 In this workshop we will explore the basics of performing Genomewide Association Studies (GWAS) using a combination of the software `plink` (http://pngu.mgh.harvard.edu/~purcell/plink/) and `R` (http://www.r-project.org/).

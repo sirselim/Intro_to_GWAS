@@ -7,3 +7,9 @@ extra.ped
 pop.cov
 wgas1.map
 wgas1.ped
+
+*.map
+*.ped
+*.cov
+*.map
+*.ped
