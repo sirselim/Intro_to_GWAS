@@ -7,3 +7,11 @@ In this workshop we will explore the basics of performing Genomewide Association
 At a later stage (a separate workshop) we will also introduce the `GenABEL` package which offers additional functionality of genomic association analyses in R.
 
 This workshop is written to be accessible to a range of people, from those that have never performed any command-line work, to those that just want a refresher. As such I have written it to include clear and straight forward outlines of all `R` and `plink` operations, most of the time stepping through these one line at at time.
+
+## Workshop Manual
+The workshop manual is available in the form of the `GWAS_workshop.pdf` file. This contains all the information and code to run through the entire workshop, as well as hopefully helpful information.
+
+## Required Files and Getting Started
+All files required for this workshop are contained within this repository.
+
+Either clone into this repository or download via the 'Download ZIP' button to the right, then start `R` and ensure this repository is set as your working directory.
