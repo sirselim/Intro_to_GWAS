@@ -13,3 +13,11 @@ wgas1.ped
 *.cov
 *.map
 *.ped
+
+plink_linux_x86_64.zip
+plink_win64.zip
+plink_mac.zip
+
+plink
+LICENSE
+prettify
