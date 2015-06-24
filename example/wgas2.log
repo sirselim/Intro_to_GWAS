@@ -1,0 +1,16 @@
+PLINK v1.90b3s 64-bit (17 Jun 2015)
+Options in effect:
+  --file example/wgas1
+  --out example/wgas2
+
+Hostname: tawny
+Working directory: /media/disk1part1/PostDoc/Rod/GenomeInformatics/Intro_to_GWAS
+Start time: Wed Jun 24 13:34:50 2015
+
+Random number seed: 1435109690
+32087 MB RAM detected; reserving 16043 MB for main workspace.
+Scanning .ped file... done.
+Performing single-pass .bed write (228694 variants, 90 people).
+--file: example/wgas2.bed + example/wgas2.bim + example/wgas2.fam written.
+
+End time: Wed Jun 24 13:34:50 2015

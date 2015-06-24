@@ -1,0 +1,12 @@
+PLINK v1.90b3s 64-bit (17 Jun 2015)
+Options in effect:
+  --out example/plink
+
+Hostname: tawny
+Working directory: /media/disk1part1/PostDoc/Rod/GenomeInformatics/Intro_to_GWAS
+Start time: Wed Jun 24 13:33:47 2015
+
+Error: No input dataset.
+For more information, try 'plink --help [flag name]' or 'plink --help | more'.
+
+End time: Wed Jun 24 13:33:47 2015
