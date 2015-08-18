@@ -21,7 +21,7 @@ Before starting the workshop you'll need to have the ability to build certain R 
 
 The most recent version can be found here: http://cran.us.r-project.org/bin/windows/Rtools/  
 
-The current release is [RTools33]("http://cran.us.r-project.org/bin/windows/Rtools/Rtools33.exe"). It's as simple as downloading and installing, just follow the prompts.  
+The current release is [RTools33](http://cran.us.r-project.org/bin/windows/Rtools/Rtools33.exe). It's as simple as downloading and installing, just follow the prompts.  
 
 Once RTools is installed you should be able to proceed with the workshop.
 
