@@ -33,12 +33,12 @@ The initial set up for Mac is a little more detailed, but should be fairly strai
 
 To build R packages from source Macs require `command line tools` to be installed. To do this:
 
-1. Launch the Terminal, found in /Applications/Utilities/
-2. Type the following command string:
+  - Launch the Terminal, found in /Applications/Utilities/
+  - Type the following command string:
 
 >xcode-select --install
 
-3. Follow the prompts
+  - Follow the prompts
 
 ***Additional R libraries for package building on OS X***
 
