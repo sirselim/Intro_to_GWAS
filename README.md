@@ -11,7 +11,8 @@ This workshop is written to be accessible to a range of people, from those that 
 ## Workshop Manual
 The workshop manual is available in the form of the `GWAS_workshop.pdf` file. This contains all the information and code to run through the entire workshop, as well as hopefully helpful information.
 
-## Before You Begin!! [Please read and follow along carefully]
+## Before You Begin!! 
+**[Please read and follow along carefully]**
 
 There are certain steps that are Operating System dependent that need to be performed before starting the workshop. I have tried to cover them off here in as much detail as required.
 
