@@ -33,14 +33,22 @@ cat('\n', 'Checking packages and installing those required for this workshop...'
 # run this before base CRAN packages as Haplin depends on these
 cat("\n", "Installing required bioconductor packages...", "\n")
 #
+# Install function for bioconductor packages 
+# should allow detection of already installed packages   
+bioc.packages <- function(x){
+  x <- as.character(match.call()[[2]])
+  if (!require(x, character.only = TRUE)){
+    biocLiteo(pkgs = x)
+    require(x, character.only = TRUE)
+  }
+}
+#
 source("http://bioconductor.org/biocLite.R")
-biocLite("GenABEL")
-biocLite("GenABEL.data")
-biocLite("DatABEL")
+bioc.packages("GenABEL")
 #
 cat("\n", "...Done...", "\n")
 
-# Install function for packages 
+# Install function for CRAN packages 
 # should allow detection of already installed packages   
 packages <- function(x){
   x <- as.character(match.call()[[2]])
