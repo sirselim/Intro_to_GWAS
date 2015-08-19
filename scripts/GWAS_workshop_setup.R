@@ -38,7 +38,7 @@ cat("\n", "Installing required bioconductor packages...", "\n")
 bioc.packages <- function(x){
   x <- as.character(match.call()[[2]])
   if (!require(x, character.only = TRUE)){
-    biocLiteo(pkgs = x)
+    biocLite(pkgs = x)
     require(x, character.only = TRUE)
   }
 }
