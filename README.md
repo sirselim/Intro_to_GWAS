@@ -70,7 +70,7 @@ Once you've performed the above steps you're ready to move on.
 
 ### Linux
 
-If you are running Linux I'm assuming that you have your own working set up that you're happy with, so you don't need me to guide the way. If you're new to Linux you'll be pleasantly surprise to find that most popular distro's have the required libraries for building R and it's packages from source. If you do have issues there is plenty of excellent documentation: 
+If you are running Linux I'm assuming that you have your own working set up that you're happy with, so you don't need me to guide the way. If you're new to Linux you'll be pleasantly surprised to find that most popular distro's have the required libraries for building R and it's packages from source already installed. If you do have issues there is plenty of excellent documentation: 
 
   - R FAQ: https://cran.r-project.org/doc/FAQ/R-FAQ.html
   - R Installation and Admin: https://cran.r-project.org/doc/manuals/r-release/R-admin.html
