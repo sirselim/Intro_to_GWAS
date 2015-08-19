@@ -16,6 +16,8 @@ The workshop manual is available in the form of the `GWAS_workshop.pdf` file. Th
 
 There are certain steps that are Operating System dependent that need to be performed before starting the workshop. I have tried to cover them off here in as much detail as required.
 
+Obviously before proceeding you need to ensure that you have both [R](https://www.r-project.org/) and [RStudio](https://www.rstudio.com/products/rstudio/download/) installed on your system.
+
 ### Windows
 
 Before starting the workshop you'll need to have the ability to build certain R packages from source. This requires special libraries, which most of the time aren't installed by default. To begin building R packages for Windows you'll need to install RTools.  
