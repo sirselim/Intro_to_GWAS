@@ -63,7 +63,7 @@ Again, for OS X 10.5 or higher download and install the following:
 
 ... or, if you prefer, everything from the terminal:
 
-> curl -O http://r.research.att.com/libs/gfortran-4.8.2-darwin13.tar.bz2
+> curl -O http://r.research.att.com/libs/gfortran-4.8.2-darwin13.tar.bz2  
 > sudo tar fvxz gfortran-4.8.2-darwin13.tar.bz2 -C /
 
 Once you've performed the above steps you're ready to move on.
