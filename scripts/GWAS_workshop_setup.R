@@ -1,19 +1,34 @@
 #!/usr/bin/Rscript
 
+# Install function for CRAN packages 
+# should allow detection of already installed packages   
+packages <- function(x){
+  x <- as.character(match.call()[[2]])
+  if (!require(x, character.only = TRUE)){
+    install.packages(pkgs = x, repos = "http://cran.r-project.org")
+    require(x, character.only = TRUE)
+  }
+}
+
+# download and install XML to parse html links for plink download
+packages(XML)
+
 # unzip example data into example/
 unzip('example/example_data.zip', exdir = 'example')
 cat('\n', 'Data extracted', '\n')
 
 # detect OS
 os.type <- Sys.info()['sysname']
+cat('\n', paste0('The system you are running is: ', os.type), '\n')
 # download the latest OS specific version of plink 1.9
+plink.site <- 'http://www.cog-genomics.org'
 ifelse(os.type == 'Linux', 
-       download.file('http://www.cog-genomics.org/static/bin/plink150903/plink_linux_x86_64.zip', 
+       download.file(paste0(plink.site, getHTMLLinks(site.html)[grep('plink_linux_x86_64.zip', getHTMLLinks(site.html))]), 
                      'bin/plink_linux_x86_64.zip'),
        ifelse(os.type == 'Windows', 
-              download.file('http://www.cog-genomics.org/static/bin/plink150903/plink_win64.zip', 
+              download.file(paste0(plink.site, getHTMLLinks(site.html)[grep('plink_win64.zip', getHTMLLinks(site.html))]), 
                             'bin/plink_win64.zip'),
-              download.file('http://www.cog-genomics.org/static/bin/plink150903/plink_mac.zip', 
+              download.file(paste0(plink.site, getHTMLLinks(site.html)[grep('plink_mac.zip', getHTMLLinks(site.html))]), 
                             'bin/plink_mac.zip')))
 cat('\n', 'PLINK downloaded', '\n')
 
@@ -48,17 +63,7 @@ bioc.packages("GenABEL")
 #
 cat("\n", "...Done...", "\n")
 
-# Install function for CRAN packages 
-# should allow detection of already installed packages   
-packages <- function(x){
-  x <- as.character(match.call()[[2]])
-  if (!require(x, character.only = TRUE)){
-    install.packages(pkgs = x, repos = "http://cran.r-project.org")
-    require(x, character.only = TRUE)
-  }
-}
-
-# use the above to download, install and load CRAN packages
+# use the defined packages function to install and load additional CRAN packages
 cat("\n", "Installing required CRAN packages...", "\n")
 #
 packages(devtools) # used to install packages from source and GitHub
