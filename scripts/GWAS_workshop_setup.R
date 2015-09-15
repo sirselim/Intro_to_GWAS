@@ -22,6 +22,8 @@ os.type <- Sys.info()['sysname']
 cat('\n', paste0('The system you are running is: ', os.type), '\n')
 # download the latest OS specific version of plink 1.9
 plink.site <- 'http://www.cog-genomics.org'
+site.html <- htmlParse('http://www.cog-genomics.org/plink2/', useInternal = TRUE)
+# obtain the os specific version of plink
 ifelse(os.type == 'Linux', 
        download.file(paste0(plink.site, getHTMLLinks(site.html)[grep('plink_linux_x86_64.zip', getHTMLLinks(site.html))]), 
                      'bin/plink_linux_x86_64.zip'),
